@@ -133,4 +133,3 @@ test.describe('Smoke Test', async () => {
         const response2 = await request.delete(`${BASE}/posts`);
         expect(response2.status()).toBe(404);
     });
-});
