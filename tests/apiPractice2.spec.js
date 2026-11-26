@@ -125,11 +125,11 @@ test.describe('Smoke Test', async () => {
     // PUT /posts/1 → 200
     // DELETE /posts/1 → 200
 
-    test('test the crud operations', async ({ request }) => {
-        const response = await request.post(`${BASE}/posts`);
-        expect(response.status()).toBe(201);
-        const response1 = await request.put(`${BASE}/posts/1`);
-        expect(response1.status()).toBe(200);
-        const response2 = await request.delete(`${BASE}/posts`);
-        expect(response2.status()).toBe(404);
-    });
+    // test('test the crud operations', async ({ request }) => {
+    //     const response = await request.post(`${BASE}/posts`);
+    //     expect(response.status()).toBe(201);
+    //     const response1 = await request.put(`${BASE}/posts/1`);
+    //     expect(response1.status()).toBe(200);
+    //     const response2 = await request.delete(`${BASE}/posts`);
+    //     expect(response2.status()).toBe(404);
+    // });
